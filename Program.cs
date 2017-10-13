@@ -20,6 +20,7 @@ namespace Primero
             Console.WriteLine("Cual es tu nombre?");
             nombre = Console.ReadLine();
            
+           //corte de control
            while(!nombre.Equals("salir")) //para comparar Strings se usa siempre Equals y no ==
            {
                 //mientras se cumple la condición entra
@@ -40,6 +41,7 @@ namespace Primero
                  nombre = Console.ReadLine();
            }
            
+           //se ejecuta 5 veces
            for(int i=0;i<5;i++)
            {
                Console.WriteLine("Hola");
@@ -78,6 +80,8 @@ namespace Primero
             Console.WriteLine("El tercer color es el: " + colores[2]);
             colores[0] = "negro"; //cambia el item en posición 0
 
+
+            //iteramos items
             for(int k=0; k < colores.Length ; k++)
             {
                 Console.WriteLine("Color: " + colores[k]);
@@ -88,6 +92,7 @@ namespace Primero
                 Console.WriteLine("Color: " + item);
             }
 
+            //arrays multidimensionales
             int [,] multi = {{1,3,4}, {2,4,2}, {1,3,4}};
             for(int l=0; l< 3; l++ )
             {
@@ -99,7 +104,8 @@ namespace Primero
 
 
 
-
+            Console.WriteLine("Presione cualquier tecla para salir.");
+            Console.ReadKey();
 
         }
     }
