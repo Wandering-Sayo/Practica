@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic; /* Permite usar Listas, etc. sino no las reconoce */
 
 namespace Primero
 {
@@ -102,6 +103,17 @@ namespace Primero
                 }
             }
 
+            //LISTAS
+            //Es dinámico no tenemos que definir la cantidad
+            List<string> listaColores = new List<string>();
+            listaColores.Add("negro");
+            listaColores.Add("naranja");
+            listaColores.Insert(1, "gris");
+
+            foreach(string item in listaColores)
+            {
+                Console.WriteLine(item);
+            }
 
 
             Console.WriteLine("Presione cualquier tecla para salir.");
